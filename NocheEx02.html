@@ -1,148 +1,119 @@
-<!-- Notes:
-* Bawal ang bootstrap or framework for CSS and JavaScript Library. 
-
-* Can use flexbox
-
-* Autobiography for Frontend Software Engineer Position at Gugil Co. (Google company hahaha)
-
-*single-page static website portfolio
-	> autobiography about yourself
-	> featured photo
-	> details of your skills related to management and web programming
-	> information abt previous projects
-
-* SHOULD DEPLOY USING GITHUB PAGES ASAP!
-*Create ReadMe.md file
-
-TOP and BOTTOM portion: separate flex containers
-CENTER portion: may flex container
--->
 <!DOCTYPE html>
 <html>
-<head> 
-	<title> Jaco's Portfolio for Frontend Position </title>
-	<style>
-		#nav_logo
-		{
-			text-align: center;
-		}
 
-		#footer_conts
-		{
-			text-align: left;
-		}
+<head>
+<title> Jaco's Space </title>
+<style>
+	@font-face 
+	{
+		font-family: 'Oleo-script';
+		src:url(OleoScript-Regular.ttf);
+	}
 
-		hr
-		{
-			width:100%;
-			margin-top:25px;
-			margin-bottom: 25px;
-		}
+	header
+	{
+		height: 700px;
+		background:#605CA8;
+		display: flex;
 
-		.flex-container
-		{
-		    display: flex;
-		    border:1px solid transparent;
-		    flex-direction: column;
-		}
+		font-family: Oleo-script;
+		font-size: 50px;
+		align-items: center;
+	}
 
-		.flex-item
-		{
-		    border:1px solid black;
-		    text-align: center;
-		}
+	ul
+	{
+		display:flex;
+		list-style-type: none;
+	}
 
-		.large-img
-		{
-			border:2px solid black;
-		}
+	ul li a
+	{
+		padding:0 20px;
+		text-decoration: none;
+		color:white;
+		display:inline;
+	}
 
-		.smol-img
-		{
-			border:4px solid black;
-		}
-
-		.flex-e
-		{
-			flex-direction: column;
-		}
-
-		.med-img
-		{
-			border:3px solid black;
-		}
-
-		.left-box
-		{
-			border:2px solid black;
-		}
-
-		.right-box
-		{
-			border:2px solid black;
-		}
-
-	</style>
-
+	li a::after
+	{
+		content:'';
+		display: block;
+		height:4px;
+		width:0;
+	}
+</style>
 </head>
 
-<body>
-
-	<div id="nav_logo">
-		<h1>About Me</h1>
-		<hr color="black"/>
-	</div>
-
-	<div class ="flex-container">
-		<div class="flex-item">
-			<b>Featured Photo</b>
-
-			<div class="large-img">
-				large stretched image
-			</div>
+<body style='background-color: #d7dfea;'>
+	<header>
+		<div class='logo' id='top'>
+			<img src='../my-github-page-ALRnoche/logo.png' alt='logo' width='17%'>
 		</div>
-
-		<div class="flex-item">
-			<b>Previous Projects</b>
+		<nav>
+			<ul>
+				<li><a href='#creator'>The Creator</a></li>
+				<li><a href='#prev-projs'>Previous Projects</a></li>
+				<li><a href='#skills'>Skills</a></li>
+				<li><a href='#autobio'>Autobiography</a></li>
+				<li><a href='#contact-me'>Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<div class='flex-container'>
 			
-			<div class="smol-img">
-				small image
+			<div class='flex-item' style='flex: 4;'>
+				<h1 id='creator'>The Creator</h1>
+				<img src='../my-github-page-ALRnoche/Featured Photo.jpg' alt='creator-photo' width='800px'>
 			</div>
 
-			<div class="smol-img">
-				small image
+			<div class='flex-item' style='flex: 4;'>
+				<h3 id='prev-projs'>Previous Projects</h1>
+					<div class='prev-imgs'>
+						<img src='../my-github-page-ALRnoche/prev-proj01.png' alt='proj01' width='350px'>
+						<img src='../my-github-page-ALRnoche/prev-proj02.png' alt='proj02' width='350px'>
+						<img src='../my-github-page-ALRnoche/prev-proj03.png' alt='proj03' width='350px'>
+						<img src='../my-github-page-ALRnoche/prev-proj04.png' alt='proj04' width='350px'>
+					</div>
 			</div>
 
-			<div class="smol-img">
-				small image
+			<div class='flex-item' style='flex: 2;'>
+				<h3 id='skills'>Skills</h1>
+				<img src='../my-github-page-ALRnoche/Skills.png' alt='skills' width='30%'>
 			</div>
 
-			<div class="smol-img">
-				small image
+			<div class='flex-item' style='flex: 2;'>
+				<h3 id='autobio'>Autobiography</h1>
+				<p>
+					André Luis R. Noche is a BS Computer Science student who prefers to be called as Jaco. 
+					<br/>
+
+					Also known as "PsychoticMaker" and "Artist2tell," Jaco's passion for art evolved into profound love for UI design, Game Development, and Graphic Design.
+					<br/>
+
+					Inspired by the Japanese King of Horror, Junji Ito, and Tim Burton's surrealistic universe, Jaco has emerged as a innovative artist, captivating his audiences and fellow artists with his signature style.
+					<br/>
+
+					To this day, Jaco is an isko from the University Of The Philippines Los Baños, a proud member in UPLB Computer Science Society, and a guild member in The Graphic Literature Guild.
+					<br/>
+				</p>
 			</div>
+
+		</div>
+	</main>
+	
+	<footer style='background-color: #4E5D6C;'>
+		<div class='my-cat'>
+			<img src='../my-github-page-ALRnoche/Footer img.png' alt='my-cat' width='30%'>
+			<h1 id='contact-me'>André Luis R. Noche</h1></br>
+			<li><a href='#'>IG</a></li>
+			<li><a href='#top'>Back to Top</a></li>
 		</div>
 
-		<div class="flex-item">
-			<div class="flex-e">
-				<b>Skills</b>
-				<div class="med-img">
-					medium image
-				</div>
+	</footer>
 
-				<b>Autobiography</b>
-				<div class="med-img">
-					medium image
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="footer_conts">
-		<hr color="black"/>
-		<div class="left-box">img</div>
-		<div class="right-box">
-			<p>Footer Contents</p>
-		</div>
-	</div>
 </body>
+
 </html>
