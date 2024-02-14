@@ -1,0 +1,148 @@
+<!-- Notes:
+* Bawal ang bootstrap or framework for CSS and JavaScript Library. 
+
+* Can use flexbox
+
+* Autobiography for Frontend Software Engineer Position at Gugil Co. (Google company hahaha)
+
+*single-page static website portfolio
+	> autobiography about yourself
+	> featured photo
+	> details of your skills related to management and web programming
+	> information abt previous projects
+
+* SHOULD DEPLOY USING GITHUB PAGES ASAP!
+*Create ReadMe.md file
+
+TOP and BOTTOM portion: separate flex containers
+CENTER portion: may flex container
+-->
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Jaco's Portfolio for Frontend Position </title>
+	<style>
+		#nav_logo
+		{
+			text-align: center;
+		}
+
+		#footer_conts
+		{
+			text-align: left;
+		}
+
+		hr
+		{
+			width:100%;
+			margin-top:25px;
+			margin-bottom: 25px;
+		}
+
+		.flex-container
+		{
+		    display: flex;
+		    border:1px solid transparent;
+		    flex-direction: column;
+		}
+
+		.flex-item
+		{
+		    border:1px solid black;
+		    text-align: center;
+		}
+
+		.large-img
+		{
+			border:2px solid black;
+		}
+
+		.smol-img
+		{
+			border:4px solid black;
+		}
+
+		.flex-e
+		{
+			flex-direction: column;
+		}
+
+		.med-img
+		{
+			border:3px solid black;
+		}
+
+		.left-box
+		{
+			border:2px solid black;
+		}
+
+		.right-box
+		{
+			border:2px solid black;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="nav_logo">
+		<h1>About Me</h1>
+		<hr color="black"/>
+	</div>
+
+	<div class ="flex-container">
+		<div class="flex-item">
+			<b>Featured Photo</b>
+
+			<div class="large-img">
+				large stretched image
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<b>Previous Projects</b>
+			
+			<div class="smol-img">
+				small image
+			</div>
+
+			<div class="smol-img">
+				small image
+			</div>
+
+			<div class="smol-img">
+				small image
+			</div>
+
+			<div class="smol-img">
+				small image
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="flex-e">
+				<b>Skills</b>
+				<div class="med-img">
+					medium image
+				</div>
+
+				<b>Autobiography</b>
+				<div class="med-img">
+					medium image
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer_conts">
+		<hr color="black"/>
+		<div class="left-box">img</div>
+		<div class="right-box">
+			<p>Footer Contents</p>
+		</div>
+	</div>
+</body>
+</html>
